@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>전역일 D-Day 카운터</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
     <style>
         body {
-            /* Noto Sans KR 폰트 적용 (둥글면서 깔끔함) */
-            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: 'SUIT', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -22,43 +22,43 @@
             margin-bottom: 20px;
             background-color: #fff;
             padding: 20px 30px;
-            border-radius: 12px; /* 둥근 모서리 */
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* 부드러운 그림자 */
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         }
         h2 {
-            font-size: 1.5rem; /* 제목 크기 조금 키움 */
-            font-weight: 700; /* 제목 굵게 */
+            font-size: 1.5rem;
+            font-weight: 700;
             color: #333;
             margin-bottom: 15px;
         }
         #target-date-input {
-            appearance: none; /* 기본 UI 제거 */
+            appearance: none;
             -webkit-appearance: none;
             -moz-appearance: none;
             padding: 10px 15px;
-            border: 1px solid #c7c7c7; /* 테두리 색상 */
-            border-radius: 8px; /* 둥근 모서리 */
+            border: 1px solid #c7c7c7;
+            border-radius: 8px;
             font-size: 1.1rem;
             color: #444;
-            background-color: #f0f0f0; /* 배경색 */
+            background-color: #f0f0f0;
             cursor: pointer;
-            transition: all 0.2s ease-in-out; /* 부드러운 전환 효과 */
-            outline: none; /* 포커스 시 외곽선 제거 */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* 은은한 그림자 */
+            transition: all 0.2s ease-in-out;
+            outline: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
         }
         #target-date-input:hover {
-            border-color: #a0a0a0; /* 호버 시 테두리 색상 변경 */
+            border-color: #a0a0a0;
             background-color: #e5e5e5;
         }
         #target-date-input:focus {
-            border-color: #6a6a6a; /* 포커스 시 테두리 색상 변경 */
-            box-shadow: 0 0 0 3px rgba(106, 106, 106, 0.2); /* 포커스 시 그림자 강조 */
+            border-color: #6a6a6a;
+            box-shadow: 0 0 0 3px rgba(106, 106, 106, 0.2);
         }
         #countdown-container {
-            font-size: 2.8rem; /* D-Day 글자 크기 더 키움 */
-            font-weight: 700; /* 굵게 */
-            color: #2c3e50; /* 짙은 남색 계열 */
-            letter-spacing: -0.05em; /* 자간 조절 */
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #2c3e50;
+            letter-spacing: -0.05em;
             margin-top: 25px;
         }
         #instructions {
@@ -74,7 +74,8 @@
         <input type="date" id="target-date-input">
     </div>
     <div id="countdown-container">
-        <div id="countdown">날짜를 선택해 주세요.</div> </div>
+        <div id="countdown">날짜를 선택해 주세요.</div> 
+    </div>
     <p id="instructions">선택하신 날짜에 맞춰 D-Day가 계산됩니다.</p>
     <script src="script.js"></script>
 </body>
