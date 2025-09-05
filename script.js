@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
             countdownElement.innerHTML = `D-${days}일 ${hours}시간 ${minutes}분`;
-            instructionsElement.style.display = 'none';
-
+            instructionsElement.style.display = 'block';
+            instructionsElement.textContent = '선택하신 날짜에 맞춰 D-Day가 계산됩니다.';
         }, 1000);
     }
 
@@ -35,6 +35,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const selectedDate = new Date(event.target.value).getTime();
         if (!isNaN(selectedDate)) {
             updateCountdown(selectedDate);
+        } else {
+            countdownElement.innerHTML = "날짜를 다시 선택해 주세요.";
+            instructionsElement.style.display = 'block';
+            instructionsElement.textContent = '올바른 전역일을 선택해 주세요.';
         }
     });
 });
