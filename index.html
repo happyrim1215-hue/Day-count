@@ -21,45 +21,29 @@
             text-align: center;
         }
         #input-container {
-            margin-bottom: 10px;
+            margin-bottom: 5px; /* 간격 절반으로 줄임 */
             background-color: #fff;
-            padding: 15px 25px;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            padding: 10px 20px; /* 패딩 축소 */
+            border-radius: 8px; /* 모서리 축소 */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07); /* 그림자 축소 */
         }
         h2 {
-            font-size: 1.1rem;
+            font-size: 1rem; /* "전역일을 알려주세요!" 글자 크기 축소 */
             font-weight: 600;
             color: #333;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         #target-date-input {
             appearance: none;
             -webkit-appearance: none;
             -moz-appearance: none;
-            padding: 8px 12px;
+            padding: 6px 10px; /* 패딩 축소 */
             border: 1px solid #c7c7c7;
-            border-radius: 6px;
-            font-size: 1rem;
+            border-radius: 5px; /* 모서리 축소 */
+            font-size: 0.9rem; /* 글자 크기 축소 */
             color: #444;
             background-color: #f0f0f0;
             cursor: pointer;
             transition: all 0.2s ease-in-out;
             outline: none;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-        }
-        #target-date-input:hover {
-            border-color: #a0a0a0;
-            background-color: #e5e5e5;
-        }
-        #target-date-input:focus {
-            border-color: #6a6a6a;
-            box-shadow: 0 0 0 3px rgba(106, 106, 106, 0.2);
-        }
-        #countdown-container {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #2c3e50;
-            letter-spacing: -0.05em;
-            margin-top: 20px;
-        }
+            box-shadow: 0 1px 3px rgba(
